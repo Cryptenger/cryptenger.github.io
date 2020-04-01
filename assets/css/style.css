@@ -1,0 +1,64 @@
+/* assets section of Overview
+-------------------------------------------------- */
+
+.assets {
+	text-align: center;
+	color: #5a5a5a;
+}
+.assets h1 {
+	margin: 60px 0 10px;
+	font-size: 60px;
+	font-weight: 200;
+	line-height: 1;
+	letter-spacing: -1px;
+}
+.assets h2 {
+	font-weight: 200;
+	margin-bottom: 20px;
+}
+.assets p {
+	font-size: 16px;
+	line-height: 1.5;
+}
+.assets .assets-byline {
+	margin-bottom: 40px;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 25px;
+	color: #999;
+}
+.assets .asset-icon {
+    display: inline-block;
+    height: 100px; width: 100px;
+    border-radius: 10rem;
+    background: #00b894;
+    color: #fafafa;
+    font-size: 2rem;
+    line-height: 100px;
+    margin-bottom: 1rem;
+}
+.textleft {
+	text-align: left;
+}
+.services {
+	list-style: none;
+	margin-left: 0;
+}
+.services li {
+	line-height: 30px;
+}
+.bordertop {
+	border-top: 1px solid #EEE;
+	margin-top: 20px;
+	padding-top: 20px;
+}
+
+/******* FOOTER *******/
+.copyleft {
+	display: block;
+	width: 100%;
+	font-weight: bold;
+	text-align: center;
+	padding: 1rem 0;
+	margin: 0;
+}
