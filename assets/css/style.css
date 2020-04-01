@@ -1,5 +1,118 @@
-/* assets section of Overview
--------------------------------------------------- */
+/* GENERAL
+------------------------- */
+@font-face {
+	font-family: 'Open-Sans';
+	src: url('../fonts/OpenSans-Regular.ttf');
+	font-weight: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Open-Sans';
+	src: url('../fonts/OpenSans-Bold.ttf');
+	font-weight: 600;
+	font-display: swap;
+}
+
+body {
+	font-family: 'Open-Sans';
+	padding-top: 65.4px;
+}
+
+h1, h2, h3, h4 {
+	font-weight: 600;
+	color: #545e56;
+}
+
+* {
+	outline: none !important;
+}
+
+.navbar {
+	background-color: #545e56;
+	padding: .7rem 2rem;
+	position: fixed;
+	width: 100%;
+	top: 0; left: 0;
+	z-index: 4242;
+}
+
+.navbar .navbar-toggler {
+	border: none;
+	position: relative;
+	padding: 0;
+	display: inline-block;
+	width: 40px;
+	z-index: 424243;
+}
+.navbar .toggler-bar {
+	background-color: #fff;
+	display: block;
+	height: 5px;
+	margin: 7px 0;
+	transition: all .3s ease-in-out;
+}
+.navbar .toggler-bar:nth-child(2) {
+	transition: all .5s ease-in-out;
+}
+.navbar .navbar-toggler.active .toggler-bar:first-child { transform: translateY(12px) rotate(135deg); }
+.navbar .navbar-toggler.active .toggler-bar:nth-child(2) { transform: rotateY(90deg); }
+.navbar .navbar-toggler.active .toggler-bar:last-child {	transform: translateY(-12px) rotate(-135deg); }
+
+.navbar-collapse {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(137,147,124, 0.95);
+	z-index: 424242;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	opacity: 0;
+}
+.navbar-collapse.active { display: flex; }
+
+.navbar .nav-link {
+	font-size: 3.5rem;
+	color: #e8e1dc;
+	text-transform: uppercase;
+}
+.navbar .nav-link:hover {
+	color: #d1c4b9;
+}
+
+
+/* Home
+------------------------- */
+.carousel-control-prev,
+.carousel-control-next {
+	cursor: pointer;
+}
+.carousel-indicators {
+	align-items: center;
+	margin-bottom: 0;
+}
+.carousel-indicators li {
+	width: 15px;
+	height: 15px;
+	transition: all .4s ease-in-out;
+	background-color: #9ea693;
+	opacity: 1;
+}
+.carousel-indicators li.active {
+	width: 20px;
+	height: 20px;
+	background-color: #89937c;
+}
+.carousel-caption {
+	background-color: rgba(84, 94, 86, 0.9);
+	padding: 1rem 2rem;
+	bottom: 2.5rem;
+}
+.carousel-caption h4 { color: #fff;}
+
 
 .assets {
 	text-align: center;
@@ -8,7 +121,7 @@
 .assets h1 {
 	margin: 60px 0 10px;
 	font-size: 60px;
-	font-weight: 200;
+	font-weight: normal;
 	line-height: 1;
 	letter-spacing: -1px;
 }
@@ -36,9 +149,6 @@
     font-size: 2rem;
     line-height: 100px;
     margin-bottom: 1rem;
-}
-.textleft {
-	text-align: left;
 }
 .services {
 	list-style: none;
