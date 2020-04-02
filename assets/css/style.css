@@ -1,3 +1,5 @@
+/* https://coolors.co/7d6167-d1c4b9-89937c-84a59d-545e56 */
+
 /* GENERAL
 ------------------------- */
 @font-face {
@@ -11,21 +13,18 @@
 	src: url('../fonts/OpenSans-Bold.ttf');
 	font-weight: 600;
 	font-display: swap;
-}
-
-body {
+}body {
 	font-family: 'Open-Sans';
 	padding-top: 65.4px;
-}
-
-h1, h2, h3, h4 {
+}h1, h2, h3, h4 {
 	font-weight: 600;
 	color: #545e56;
 }
-
-* {
-	outline: none !important;
+h3 {
+	font-size: 2.5rem;
 }
+
+* { outline: none !important; }
 
 .navbar {
 	background-color: #545e56;
@@ -35,7 +34,6 @@ h1, h2, h3, h4 {
 	top: 0; left: 0;
 	z-index: 4242;
 }
-
 .navbar .navbar-toggler {
 	border: none;
 	position: relative;
@@ -56,9 +54,7 @@ h1, h2, h3, h4 {
 }
 .navbar .navbar-toggler.active .toggler-bar:first-child { transform: translateY(12px) rotate(135deg); }
 .navbar .navbar-toggler.active .toggler-bar:nth-child(2) { transform: rotateY(90deg); }
-.navbar .navbar-toggler.active .toggler-bar:last-child {	transform: translateY(-12px) rotate(-135deg); }
-
-.navbar-collapse {
+.navbar .navbar-toggler.active .toggler-bar:last-child {	transform: translateY(-12px) rotate(-135deg); }.navbar-collapse {
 	display: none;
 	position: fixed;
 	width: 100%;
@@ -72,20 +68,21 @@ h1, h2, h3, h4 {
 	flex-direction: column;
 	opacity: 0;
 }
-.navbar-collapse.active { display: flex; }
-
-.navbar .nav-link {
+.navbar-collapse.active { display: flex; }.navbar .nav-link {
 	font-size: 3.5rem;
 	color: #e8e1dc;
 	text-transform: uppercase;
 }
-.navbar .nav-link:hover {
+.navbar .nav-link:hover{
 	color: #d1c4b9;
+}
+.navbar .nav-link.active {
+	color: #beb3a9;
 }
 
 
-/* Home
-------------------------- */
+ /* Home
+ ------------------------- */
 .carousel-control-prev,
 .carousel-control-next {
 	cursor: pointer;
@@ -112,8 +109,6 @@ h1, h2, h3, h4 {
 	bottom: 2.5rem;
 }
 .carousel-caption h4 { color: #fff;}
-
-
 .assets {
 	text-align: center;
 	color: #5a5a5a;
@@ -162,6 +157,50 @@ h1, h2, h3, h4 {
 	margin-top: 20px;
 	padding-top: 20px;
 }
+
+/* Team
+------------------------ */
+.splashart {
+	height: 300px;
+	background-position: center top;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.splashart h2 {
+	font-size: 6rem;
+	color: #e5ded8;
+	text-shadow: 3px 3px 10px #545e56;
+}
+
+.splashart.team-splashart {
+	background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d8328f77-2bec-4a20-9483-ea76dd62985e/dan31sc-80f18518-0ef0-4bdc-9c0a-11c9e62b769f.png/v1/fill/w_1192,h_670,q_70,strp/hackerman_by_shiiftyshift_dan31sc-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTA4MCIsInBhdGgiOiJcL2ZcL2Q4MzI4Zjc3LTJiZWMtNGEyMC05NDgzLWVhNzZkZDYyOTg1ZVwvZGFuMzFzYy04MGYxODUxOC0wZWYwLTRiZGMtOWMwYS0xMWM5ZTYyYjc2OWYucG5nIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.oexYyxCE-NGCtW-MLYjftpP8CKxQNLaX-zANrWbxgNs');
+}
+
+.card {
+	padding: 1rem;
+	text-align: center;
+}
+.card.contributor {
+	padding: .5rem;
+}
+.card .img-container  {
+	width: 100%;
+	text-align: center;
+}
+.card .img-container img {
+	border-radius: 50rem;
+	width: 60%;
+}
+.card.contributor .card-body {
+	padding: 1rem 0 0 0;
+}
+.card.contributor .img-container img {
+	border-radius: 50rem;
+	width: 80%;
+}
+
+
 
 /******* FOOTER *******/
 .copyleft {
