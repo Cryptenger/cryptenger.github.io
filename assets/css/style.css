@@ -202,6 +202,40 @@ h3 {
 
 
 
+/* Changelogs
+----------------------------- */
+.splashart.changelogs-splashart {
+	background-image: url('../img/changelogs_tmp_splashart.png');
+}
+
+.nav-fill.nav-pills .nav-link {
+	background-color: transparent;
+	color: #89937c;
+}
+.nav-fill.nav-pills .nav-link:hover {
+	background-color: #e0e0e0;
+}
+.nav-fill.nav-pills .nav-link.active {
+	background-color: #89937c;
+	color: #fff;
+}
+
+#changelogs {
+	font-family: monospace;
+}
+#changelogs .addition {
+	color: #008c31;
+}
+#changelogs .enhance {
+	color: #0057a0;
+}
+#changelogs .deletion {
+	color: #C72C1C;
+}
+#changelogs .bug {
+	color: #505050;
+}
+
 /******* FOOTER *******/
 .copyleft {
 	display: block;

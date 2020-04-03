@@ -31,8 +31,8 @@
                 <div class="collapse navbar-collapse" id="mainNavbar">
                     <a class="nav-link" href="index.html">Plus d'infos</a>
                     <a class="nav-link" href="index.html">Téléchargements</a>
-                    <a class="nav-link" href="changelogs.html">Changelogs</a>
-                    <a class="nav-link active" href="team.html">L'équipe</a>
+                    <a class="nav-link active" href="changelogs.html">Changelogs</a>
+                    <a class="nav-link" href="team.html">L'équipe</a>
                     <a class="nav-link" href="index.html">Contact</a>
                     <!-- <a class="nav-link" href="index.html">Dons</a> -->
                 </div>
@@ -40,68 +40,65 @@
         </header>
 
         <!-- Content ================================================== -->
-        <div class="splashart team-splashart">
-            <h2>L'Équipe</h2>
+        <div class="splashart changelogs-splashart">
+            <h2>Changements</h2>
         </div>
 
         <div class="container pt-4">
-            <h3>Les Initiateurs</h3>
-
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="img-container">
-                            <img src="https://i.redd.it/vreph5xqwm311.jpg" class="card-img-top" alt="Quentin A Avatar">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Quentin</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                    </div>
+            <ul class="nav nav-pills nav-fill">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#client">Client</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#serveur">Serveur</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#site">Site</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="changelogs">
+                <div class="tab-pane fade show active" id="client" role="tabpanel">
+                    <!-- Client Changelogs Begin  -->
+                    <section id="client-v-0-2">
+                        <h3>Version v0.2</h3>
+                        <ul>
+                            <li><span class="addition">[Ajout]</span> Chiffrage des messages.</li>
+                        </ul>
+                    </section>
+                    <section id="client-v-0-1">
+                        <h3>Version v0.1</h3>
+                        <ul>
+                            <li><span class="addition">[Ajout]</span> Possibilité de changer de canal de discussion.</li>
+                            <li><span class="enhance">[Amélioration]</span> Les pseudos peuvent avoir des couleurs.</li>
+                        </ul>
+                    </section>
+                    <!-- Client Changelogs End  -->
                 </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="img-container">
-                            <img src="https://i.redd.it/vreph5xqwm311.jpg" class="card-img-top" alt="Adrien L Avatar">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Adrien</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                    </div>
+                <div class="tab-pane fade" id="serveur" role="tabpanel">
+                    <!-- Server Changelogs Begin  -->
+                    <section id="server-v-0-1">
+                        <h3>Version v0.1</h3>
+                        <ul>
+                            <li><span class="deletion">[Supression]</span> Suppression des commandes <code>fin</code> et <code>/name &lt;name&gt;</code>.</li>
+                            <li><span class="bug">[Bug]</span> Le serveur ne crash plus lorsqu'un client se déconnecte.</li>
+                        </ul>
+                    </section>
+                    <!-- Server Changelogs End  -->
                 </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="img-container">
-                            <img src="https://i.redd.it/vreph5xqwm311.jpg" class="card-img-top" alt="Quentin C Avatar">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Quentin</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                    </div>
+                <div class="tab-pane fade" id="site" role="tabpanel">
+                    <!-- Site Changelogs Begin  -->
+                    <section id="site-v-0-1">
+                        <h3>Version v0.1</h3>
+                        <ul>
+                            <li><span class="addition">[Ajout]</span> Ajout de la page Équipe.</li>
+                            <li><span class="addition">[Ajout]</span> Ajout de la page Changelogs.</li>
+                            <li><span class="enhance">[Amélioration]</span> Passage de BootStrap 2 à BootStrap 4.</li>
+                        </ul>
+                    </section>
+                    <!-- Site Changelogs End  -->
                 </div>
             </div>
         </div>
-
-        <!-- <div class="container pt-4">
-            <h3>Les Contributeurs</h3>
-
-            <div class="row">
-                <div class="col-lg-2 col-md-3">
-                    <div class="card contributor">
-                        <div class="img-container">
-                            <img src="https://i.redd.it/vreph5xqwm311.jpg" class="card-img-top" alt="Quentin A Avatar">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Random</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
 
         <!-- Footer ================================================== -->
         <footer class="footer">
