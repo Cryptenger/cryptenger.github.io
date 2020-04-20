@@ -13,10 +13,12 @@
 	src: url('../fonts/OpenSans-Bold.ttf');
 	font-weight: 600;
 	font-display: swap;
-}body {
+}
+body {
 	font-family: 'Open-Sans';
 	padding-top: 65.4px;
-}h1, h2, h3, h4 {
+}
+h1, h2, h3, h4 {
 	font-weight: 600;
 	color: #545e56;
 }
@@ -163,6 +165,7 @@ h3 {
 .splashart {
 	height: 300px;
 	background-position: center top;
+	background-size: cover;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -235,6 +238,100 @@ h3 {
 #changelogs .bug {
 	color: #505050;
 }
+
+
+
+
+
+/* Downloads
+------------------------ */
+.splashart.downloads-splashart {
+	background-image: url("https://ak7.picdn.net/shutterstock/videos/18451507/thumb/1.jpg");
+}
+
+.dl-title {
+	font-size: 3rem;
+	text-align: center;
+}
+.mb-6 {
+	margin-bottom: 6rem;
+}
+
+.downloader-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.downloader-container h4 {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+.downloader-container .selector-container {
+	position: relative;
+}
+.downloader,
+.dl-selector,
+.dl-selection button {
+	padding: 2rem;
+	width: 162px;
+	height: 162px;
+	border-radius: 0;
+	font-size: 4rem;
+	background-color: #89937c;
+	border: none;
+	box-shadow: none !important;
+	margin-bottom: .5rem;
+}
+.downloader:hover,
+.dl-selector:hover,
+.dl-selection button:hover {
+	background-color: #717966;
+}
+.downloader:active,
+.dl-selector:active,
+.dl-selection button:active {
+	background-color: #646b5b !important;
+}
+.downloader span {
+	font-size: .9rem;
+	display: block;
+}
+
+.dl-selector {
+	position: relative;
+	width: unset;
+	font-size: 1.5rem;
+	padding: 0 .75rem;
+}
+.dl-selector:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 10%;
+	width: 1px;
+	height: 80%;
+	background: #5b6151;
+}
+
+.dl-selection {
+	z-index: 1000;
+	position: absolute;
+	display: none;
+	width: 100%;
+	top: calc(100% - .5rem);
+	box-shadow: 0 10px 15px 0 rgba(20, 20, 20, .75);
+}
+
+.dl-selection button {
+	width: 100%;
+	font-size: 1rem;
+	height: unset;
+	margin: 0;
+	padding: .7rem;
+	border-top: 1px solid #5b6151 !important;
+}
+
 
 /******* FOOTER *******/
 .copyleft {

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>CRYPTENGER</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/css/fontawesome.min.css" rel="stylesheet">
+        <link href="assets/css/customicons.css" rel="stylesheet">
+        <link href="assets/css/docs.css" rel="stylesheet">
+        <link href="assets/css/style.css" rel="stylesheet">
+        
+        <link rel="shortcut icon" href="assets/ico/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    </head>
+
+    <body>
+        <!-- Navbar  ================================================== -->
+        <header>
+            <nav class="navbar navbar-dark">
+                <a class="navbar-brand" href="index.html">Cryptenger</a>
+                <a class="navbar-toggler" type="button" data-target="#mainNavbar">
+                    <span class="toggler-bar"></span>
+                    <span class="toggler-bar"></span>
+                    <span class="toggler-bar"></span>
+                </a>
+
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <a class="nav-link" href="index.html">Plus d'infos</a>
+                    <a class="nav-link active" href="downloads.html">Téléchargements</a>
+                    <a class="nav-link" href="changelogs.html">Changelogs</a>
+                    <a class="nav-link" href="team.html">L'équipe</a>
+                    <a class="nav-link" href="index.html">Contact</a>
+                    <!-- <a class="nav-link" href="index.html">Dons</a> -->
+                </div>
+            </nav>
+        </header>
+
+        <!-- Content ================================================== -->
+        <div class="splashart downloads-splashart">
+            <h2>Téléchargements</h2>
+        </div>
+
+        <div class="container pt-4">
+            <h3 class="dl-title">Client</h3>
+            <div class="row mb-6">
+                <div class="col-lg-4 downloader-container">
+                    <h4>Windows</h4>
+                    <a class="btn btn-success downloader" target="_blank" href="https://github.com/Cryptenger/cryptenger_client/releases/download/v0.0.1/cryptenger_client.exe" id="win-downloader">
+                        <i class="fab fa-windows"></i>
+                        <span>64 bits</span>
+                    </a>
+                </div>
+
+                <div class="col-lg-4 downloader-container">
+                    <h4>Linux</h4>
+                    <div class="selector-container">
+                        <a class="btn btn-success downloader" target="_blank" href="https://github.com/Cryptenger/cryptenger_client/releases/download/v0.0.1/cryptenger_client.rpm" id="linux-downloader">
+                            <i class="fab fa-linux"></i>
+                            <span>.rpm x64</span>
+                        </a><!--
+                        --><button class="btn btn-success dl-selector" id="linux-selector">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+
+                        <div id="linux-selection" class="dl-selection">
+                            <button class="btn btn-success" id="linux-rpm"><i class="fab fa-redhat"></i> .rpm x64</button>
+                            <button class="btn btn-success" id="linux-deb"><i class="icon-debian"></i> .deb x64</button>
+                            <button class="btn btn-success" id="linux-pkg_tar_xz"><i class="icon-arch"></i> .pkg.tar.xz x64</button>
+                            <button class="btn btn-success" id="linux-tgz"><i class="icon-slackware"></i> .tgz x64</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 downloader-container">
+                    <h4>Sources</h4>
+                    <div class="selector-container">
+                        <a class="btn btn-success downloader" target="_blank" href="https://github.com/Cryptenger/cryptenger_client/archive/v0.0.1.zip" id="source-downloader">
+                            <i class="fab fa-osi"></i>
+                            <span>.zip</span>
+                        </a><!--
+                        --><button class="btn btn-success dl-selector" id="source-selector">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+
+                        <div id="source-selection" class="dl-selection">
+                            <button class="btn btn-success" id="source-zip">.zip</button>
+                            <button class="btn btn-success" id="source-tar_gz">.tar.gz</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="dl-title">Serveur</h3>
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3 downloader-container">
+                    <h4>Sources</h4>
+                    <div class="selector-container">
+                        <a class="btn btn-success downloader" target="_blank" href="https://github.com/Cryptenger/cryptenger_server/archive/v0.0.1.zip" id="srv-source-downloader">
+                            <i class="fab fa-osi"></i>
+                            <span>.zip</span>
+                        </a><!--
+                        --><button class="btn btn-success dl-selector" id="srv-source-selector">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+
+                        <div id="srv-source-selection" class="dl-selection">
+                            <button class="btn btn-success" id="source-zip-srv">.zip</button>
+                            <button class="btn btn-success" id="source-tar_gz-srv">.tar.gz</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer ================================================== -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row-fluid">
+                    <div class="span12">
+                        <blockquote>
+                            <p class="testimonial">I think it would be cool to add a quote about encryption, security, privacy and or freedom.</p>
+                            <p class="name"><b>Someone - 2010</b></p>
+                        </blockquote>
+                    </div>
+                </div>
+
+                <hr class="soften1 my-3">
+
+                <p class="copyleft">Copyleft <i class="fas fa-copyright fa-rotate-180"></i> - <i class="fas fa-infinity"></i></p>
+            </div>
+        </footer>
+
+        <!-- javascript ================================================== --> 
+        <script src="assets/js/jquery.js" type="text/javascript"></script> 
+        <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+
+        <script src="assets/js/application.js" type="text/javascript"></script> 
+        <script src="assets/js/superfish.js" type="text/javascript"></script> 
+        <script src="assets/js/main.js" type="text/javascript"></script> 
+    </body>
+</html>
