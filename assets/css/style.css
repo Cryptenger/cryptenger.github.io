@@ -27,7 +27,7 @@ h3 {
 * { outline: none !important; }
 
 .navbar {
-	background-color: #545e56;
+	background-color: #01193a;		/*COSIUS R&D*/
 	padding: .7rem 2rem;
 	position: fixed;
 	width: 100%;
@@ -61,7 +61,7 @@ h3 {
 	height: 100%;
 	top: 0;
 	left: 0;
-	background-color: rgba(137,147,124, 0.95);
+	background-color: rgba(1,25,58, 0.95);
 	z-index: 424242;
 	justify-content: center;
 	align-items: center;
@@ -104,7 +104,7 @@ h3 {
 	background-color: #89937c;
 }
 .carousel-caption {
-	background-color: rgba(84, 94, 86, 0.9);
+	/*background-color: rgba(84, 94, 86, 0.9);*/		/*COSIUS R&D */
 	padding: 1rem 2rem;
 	bottom: 2.5rem;
 }
@@ -174,7 +174,7 @@ h3 {
 }
 
 .splashart.team-splashart {
-	background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d8328f77-2bec-4a20-9483-ea76dd62985e/dan31sc-80f18518-0ef0-4bdc-9c0a-11c9e62b769f.png/v1/fill/w_1192,h_670,q_70,strp/hackerman_by_shiiftyshift_dan31sc-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTA4MCIsInBhdGgiOiJcL2ZcL2Q4MzI4Zjc3LTJiZWMtNGEyMC05NDgzLWVhNzZkZDYyOTg1ZVwvZGFuMzFzYy04MGYxODUxOC0wZWYwLTRiZGMtOWMwYS0xMWM5ZTYyYjc2OWYucG5nIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.oexYyxCE-NGCtW-MLYjftpP8CKxQNLaX-zANrWbxgNs');
+	background-image: url('../img/cryptenger_banner_background.png');
 }
 
 .card {
