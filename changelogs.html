@@ -11,17 +11,13 @@
         <link href="assets/css/style.css" rel="stylesheet">
 
         <link rel="shortcut icon" href="assets/ico/favicon.ico">
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
     </head>
 
     <body>
         <!-- Navbar  ================================================== -->
         <header>
             <nav class="navbar navbar-dark">
-                <a class="navbar-brand" href="index.html">Cryptenger</a>
+                <a class="navbar-brand" href="index.html"><img src="assets/img/cryptenger_logo_alpha.png"> Cryptenger</a>
                 <a class="navbar-toggler" type="button" data-target="#mainNavbar">
                     <span class="toggler-bar"></span>
                     <span class="toggler-bar"></span>
@@ -29,11 +25,11 @@
                 </a>
 
                 <div class="collapse navbar-collapse" id="mainNavbar">
-                    <a class="nav-link" href="index.html">Plus d'infos</a>
+                    <img src="assets/img/cryptenger_logo_alpha.png">
+                    <a class="nav-link" href="index.html">Accueil</a>
                     <a class="nav-link" href="downloads.html">Téléchargements</a>
                     <a class="nav-link active" href="changelogs.html">Changelogs</a>
                     <a class="nav-link" href="team.html">L'équipe</a>
-                    <a class="nav-link" href="index.html">Contact</a>
                     <!-- <a class="nav-link" href="index.html">Dons</a> -->
                 </div>
             </nav>
@@ -95,12 +91,27 @@
                 </div>
                 <div class="tab-pane fade" id="site" role="tabpanel">
                     <!-- Site Changelogs Begin  -->
-                    <section id="site-v-0-1">
-                        <h3>Version v0.1</h3>
+                    <section id="site-v-1-0">
+                        <h3>Version v1.0</h3>
+                        <ul>
+                            <li><span class="addition">[Ajout]</span> Ajout du trailer sur la page d'accueil.</li>
+                            <li><span class="addition">[Ajout]</span> Ajout d'une citation dans le footer.</li>
+                            <li><span class="addition">[Ajout]</span> Ajout du logo un peu partout.</li>
+                            <li><span class="addition">[Ajout]</span> Ajout de vrais textes sur la page d'accueil.</li>
+                            <li><span class="addition">[Ajout]</span> Ajout des liens vers le github et la licence dans le footer.</li>
+                            <li><span class="enhance">[Amélioration]</span> Changement des images du slider et du splashart de la page Équipe.</li>
+                            <li><span class="enhance">[Amélioration]</span> Menu plus fluide + réglage d'un bug.</li>
+                            <li><span class="enhance">[Amélioration]</span> Changement des couleurs.</li>
+                        </ul>
+                    </section>
+                    <section id="site-alpha">
+                        <h3>Version Alpha</h3>
                         <ul>
                             <li><span class="addition">[Ajout]</span> Ajout de la page Téléchargements.</li>
                             <li><span class="addition">[Ajout]</span> Ajout de la page Équipe.</li>
                             <li><span class="addition">[Ajout]</span> Ajout de la page Changelogs.</li>
+                            <li><span class="enhance">[Amélioration]</span> Refonte total du menu.</li>
+                            <li><span class="enhance">[Amélioration]</span> Adaptation du thème aux besoins.</li>
                             <li><span class="enhance">[Amélioration]</span> Passage de BootStrap 2 à BootStrap 4.</li>
                         </ul>
                     </section>
@@ -115,15 +126,16 @@
                 <div class="row-fluid">
                     <div class="span12">
                         <blockquote>
-                            <p class="testimonial">I think it would be cool to add a quote about encryption, security, privacy and or freedom.</p>
-                            <p class="name"><b>Someone - 2010</b></p>
+                            <p class="testimonial">Affirmer que vous vous moquez du droit à la vie privée parce que vous n'avez rien à cacher revient à dire que vous n'en avez rien à faire de la liberté d'expression parce que vous n'avez rien à dire.</p>
+                            <p class="name"><b>Edward Snowden <em>(Citizenfour)</em> - 2014</b></p>
                         </blockquote>
                     </div>
                 </div>
 
                 <hr class="soften1 my-3">
 
-                <p class="copyleft">Copyleft <i class="fas fa-copyright fa-rotate-180"></i> - <i class="fas fa-infinity"></i></p>
+                <p class="copyleft"><img src="assets/img/cryptenger_logo_alpha.png"> <a href="https://github.com/Cryptenger/cryptenger.github.io" target="_blank">Site Open Source</a> - <a href="https://github.com/Cryptenger/cryptenger.github.io/blob/master/LICENSE" target="_blank">MIT</a></p>
+                <a href="https://github.com/cryptenger" class="github-link" target="_blank"><i class="fab fa-github"></i></a>
             </div>
         </footer>
 
@@ -131,8 +143,6 @@
         <script src="assets/js/jquery.js" type="text/javascript"></script>
         <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
 
-        <script src="assets/js/application.js" type="text/javascript"></script>
-        <script src="assets/js/superfish.js" type="text/javascript"></script>
         <script src="assets/js/main.js" type="text/javascript"></script>
     </body>
 </html>

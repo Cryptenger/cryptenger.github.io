@@ -4,6 +4,12 @@
 ------------------------- */
 @font-face {
 	font-family: 'Open-Sans';
+	src: url('../fonts/OpenSans-Light.ttf');
+	font-weight: 300;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Open-Sans';
 	src: url('../fonts/OpenSans-Regular.ttf');
 	font-weight: normal;
 	font-display: swap;
@@ -16,8 +22,15 @@
 }
 body {
 	font-family: 'Open-Sans';
-	padding-top: 65.4px;
+	padding-top: 82px;
 }
+
+::selection, ::-moz-selection {
+	background: rgba(2, 43, 100, 0.95);
+	color: #fff;
+	text-shadow: none;
+}
+
 h1, h2, h3, h4 {
 	font-weight: 600;
 	color: #545e56;
@@ -35,6 +48,13 @@ h3 {
 	width: 100%;
 	top: 0; left: 0;
 	z-index: 4242;
+}
+.navbar .navbar-brand {
+	font-weight: 900;
+}
+.navbar .navbar-brand img {
+	width: 2.5em;
+	height: auto;
 }
 .navbar .navbar-toggler {
 	border: none;
@@ -56,7 +76,9 @@ h3 {
 }
 .navbar .navbar-toggler.active .toggler-bar:first-child { transform: translateY(12px) rotate(135deg); }
 .navbar .navbar-toggler.active .toggler-bar:nth-child(2) { transform: rotateY(90deg); }
-.navbar .navbar-toggler.active .toggler-bar:last-child {	transform: translateY(-12px) rotate(-135deg); }.navbar-collapse {
+.navbar .navbar-toggler.active .toggler-bar:last-child {	transform: translateY(-12px) rotate(-135deg); }
+
+.navbar-collapse {
 	display: none;
 	position: fixed;
 	width: 100%;
@@ -69,17 +91,24 @@ h3 {
 	align-items: center;
 	flex-direction: column;
 	opacity: 0;
+	transition: opacity .45s;
 }
-.navbar-collapse.active { display: flex; }.navbar .nav-link {
+.navbar-collapse.active { display: flex; }
+.navbar-collapse.visible { opacity: 1; }
+.navbar .nav-link {
 	font-size: 3.5rem;
-	color: #e8e1dc;
+	color: #ebe4e0;
 	text-transform: uppercase;
 }
 .navbar .nav-link:hover{
-	color: #d1c4b9;
+	color: #cdbcb1;
 }
 .navbar .nav-link.active {
-	color: #beb3a9;
+	color: #b9a192;
+}
+.navbar-collapse img {
+	width: 11rem;
+	height: auto;
 }
 
 
@@ -97,20 +126,28 @@ h3 {
 	width: 15px;
 	height: 15px;
 	transition: all .4s ease-in-out;
-	background-color: #9ea693;
+	background-color: #022b64;
 	opacity: 1;
 }
 .carousel-indicators li.active {
 	width: 20px;
 	height: 20px;
-	background-color: #89937c;
+	background-color: #023b87;
 }
 .carousel-caption {
-	/*background-color: rgba(84, 94, 86, 0.9);*/		/*COSIUS R&D */
+	background-color: rgba(3, 30, 73, 0.9);		/*COSIUS R&D */
 	padding: 1rem 2rem;
 	bottom: 2.5rem;
 }
 .carousel-caption h4 { color: #fff;}
+.carousel-caption p {
+	margin: 0;
+}
+
+#trailer {
+	max-width: 100%;
+}
+
 .assets {
 	text-align: center;
 	color: #5a5a5a;
@@ -121,6 +158,8 @@ h3 {
 	font-weight: normal;
 	line-height: 1;
 	letter-spacing: -1px;
+	color: #333;
+	font-weight: 600;
 }
 .assets h2 {
 	font-weight: 200;
@@ -141,7 +180,7 @@ h3 {
     display: inline-block;
     height: 100px; width: 100px;
     border-radius: 10rem;
-    background: #00b894;
+    background: #02357e;
     color: #fafafa;
     font-size: 2rem;
     line-height: 100px;
@@ -160,6 +199,33 @@ h3 {
 	padding-top: 20px;
 }
 
+.btn-download-container {
+	width: 100%;
+	text-align: center;
+}
+.btn-download {
+	background: #022b64;
+	color: #fff !important;
+	padding: 1rem 2rem;
+	font-size: 1.5rem;
+	margin: 1rem 0;
+	font-weight: 300;
+}
+.btn-download:hover,
+.btn-download:active {
+	background: #02357e;
+}
+
+.index-info h1 {
+	text-align: center;
+}
+.index-info h1,
+.index-info h2 {
+	display: block;
+	width: 100%;
+	color: #333;
+}
+
 /* Team
 ------------------------ */
 .splashart {
@@ -173,11 +239,22 @@ h3 {
 .splashart h2 {
 	font-size: 6rem;
 	color: #e5ded8;
-	text-shadow: 3px 3px 10px #545e56;
+	text-shadow: 3px 3px 10px #011532;
 }
 
 .splashart.team-splashart {
 	background-image: url('../img/cryptenger_banner_background.png');
+}
+
+.initiators .card .card-body {
+	padding-bottom: 0;
+}
+.initiators .card .card-body p {
+	margin-bottom: .5rem;
+}
+.initiators .card .team-socials a {
+	color: #212529;
+	font-size: 2.3rem;
 }
 
 .card {
@@ -213,13 +290,13 @@ h3 {
 
 .nav-fill.nav-pills .nav-link {
 	background-color: transparent;
-	color: #89937c;
+	color: #034096;
 }
 .nav-fill.nav-pills .nav-link:hover {
 	background-color: #e0e0e0;
 }
 .nav-fill.nav-pills .nav-link.active {
-	background-color: #89937c;
+	background-color: #022b64;
 	color: #fff;
 }
 
@@ -278,7 +355,7 @@ h3 {
 	height: 162px;
 	border-radius: 0;
 	font-size: 4rem;
-	background-color: #89937c;
+	background-color: #02357e;
 	border: none;
 	box-shadow: none !important;
 	margin-bottom: .5rem;
@@ -286,12 +363,12 @@ h3 {
 .downloader:hover,
 .dl-selector:hover,
 .dl-selection button:hover {
-	background-color: #717966;
+	background-color: #022b64;
 }
 .downloader:active,
 .dl-selector:active,
 .dl-selection button:active {
-	background-color: #646b5b !important;
+	background-color: #01204b !important;
 }
 .downloader span {
 	font-size: .9rem;
@@ -307,11 +384,11 @@ h3 {
 .dl-selector:after {
 	content: "";
 	position: absolute;
-	left: 0;
+	left: -1px;
 	top: 10%;
-	width: 1px;
+	width: 2px;
 	height: 80%;
-	background: #5b6151;
+	background: #022854;
 }
 
 .dl-selection {
@@ -329,16 +406,35 @@ h3 {
 	height: unset;
 	margin: 0;
 	padding: .7rem;
-	border-top: 1px solid #5b6151 !important;
+	border-top: 1px solid #02204b !important;
 }
 
 
 /******* FOOTER *******/
+.footer {
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	padding: 1.6rem 0;
+}
+
 .copyleft {
 	display: block;
 	width: 100%;
 	font-weight: bold;
 	text-align: center;
-	padding: 1rem 0;
+	padding: .5rem 0;
 	margin: 0;
+}
+.copyleft img {
+	width: 2.5rem;
+	height: auto;
+}
+
+.github-link {
+	font-size: 2.7rem;
+}
+footer.footer a:hover {
+	color: #044baf;
+	text-decoration: none;
 }
